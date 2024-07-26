@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-This is the second edit direct to main that should be blocked by the protection rule. The protection rule wasn't enabled at first
+This is the second edit direct to main that should be blocked by the protection rule. The protection rule wasn't enabled at first then I hadn't hit save changes at the bottom. 
 
 
 <!--
