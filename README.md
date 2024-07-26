@@ -1,5 +1,6 @@
 ## Hi there 👋
 
+This is the firest edit direct to main that should be blocked by the protection rule. 
 <!--
 **dertinfo/dertinfo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
