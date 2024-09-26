@@ -6,7 +6,38 @@ Each year a host team takes on the responsibility of hosting the event in their 
 
 The competition is one of the highlights of the rapper dancing community calendar and it is important to the community that they can be confident that the results will be accurate, and they will get positive and constructive feedback on their performances.
 
-This is where DertInfo comes in and hopes to simplify some of these challenges through providing well-constructed, secure and reliable software to support the event. 
+This is where DertInfo comes in and hopes to simplify some of these challenges through providing well-constructed, secure and reliable software to support the event.
+
+Please note that we're new to running open source projects on GitHub so please support us with any knowledge that you have. 
+
+## Gettings Started
+
+For a cross workload view of the ongoing work and the project in general please see the following two items
+
+- Projects: https://github.com/dertinfo/dertinfo/projects
+- Wiki: https://github.com/dertinfo/dertinfo/wiki
+
+We track projects and big peices of work wich spacns several of the workloads (applications, services) using GitHub projects. If you want to help us with planning the work and decisding what we work on next or help with deciding what issues are good for first time developers or are important to the community please let us know. Projects are public as are most issues in the projects (less security vunerabilites) and issues where relevant should be added to a project backlog. 
+
+The wiki is where most of the technical documentation will be added to help communicate to contributors how the system works and design decisions in producing the system so that they can be evalauted against and new work that we're looking to complete. 
+
+For each individual workload these are the respositories
+
+- The Main Website: [https://github.com/dertinfo/dertinfo-web](https://github.com/dertinfo/dertinfo-web) 
+- The Web App: [https://github.com/dertinfo/dertinfo-app](https://github.com/dertinfo/dertinfo-app) 
+- The Api: [https://github.com/dertinfo/dertinfo-api](https://github.com/dertinfo/dertinfo-api)
+- The Image Resizging Function App: [https://github.com/dertinfo/dertinfo-image-resize-v4](https://github.com/dertinfo/dertinfo-image-resize-v4)
+
+A depiction and information of the architecture can be found here in the wiki: 
+
+- [https://github.com/dertinfo/dertinfo/wiki](https://github.com/dertinfo/dertinfo/wiki)
+
+Each of these projects has it's own README.md which gives greater information about how to setup and run the workload. 
+
+For all workloads there is a related docker container which is constucted and published from the main branch in all cases. This is completed by the Azure Dev Ops (ADO) build pipeline and these are downloadable from Docker Hub: [https://hub.docker.com/dertinfo](https://hub.docker.com/u/dertinfo). This allows you to run dependancies using docker and docker-compose for which each project has been make availbale in the location of "infra/docker/" allowing you to work on any single project without needing to setup all services in debug. 
+
+Please note that at the time of writing there is currently minimal seed data in the database to allow the system to run and allow a user to engage with the system. As we gain support it is intededed that we can provide this to allow quicker engagement with some of the more compllex features of the system without having to first build a rich dataset from scratch.  Discussion here: [https://github.com/dertinfo/dertinfo/discussions/20](https://github.com/dertinfo/dertinfo/discussions/20)
+
 
 ## History
 
@@ -38,11 +69,11 @@ Once your PR has been approved and merged your code will be deployed via automat
 
 If there is something that you want to work on that is not in backlog or an improvement that you would like to make please raise that as an idea under the [Discussions](https://github.com/dertinfo/dertinfo/discussions) and we can discuss how we can support you in making your idea a new feature and integrate it into the eco system. 
 
-Also if you have any suggestion on ways to make contributing easier or safer then please get in touch as we're keen to hear your ideas. 
+Also if you have any suggestion on ways to make contributing easier or safer then please get in touch as we're keen to hear your ideas. Please add these to the dicsussions.  
 
 ## Security
 
-If you identify a security issue within the solution please contact us as dertinfo@gmail.com with a high priority email and details of your findings. We'll endeavour to triage and address the issue as soon as possible.
+If you identify a security issue within the solution please contact us as dertinfo@gmail.com with a high priority email and details of your findings. We'll endeavour to triage and address the issue as soon as possible. Also in most repos we've enabled "Private Vunerability Reporting" to which you can raise a special security "issue" that will be private.
 
 <!--
 **dertinfo/dertinfo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
