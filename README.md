@@ -10,14 +10,14 @@ This is where DertInfo comes in and hopes to simplify some of these challenges t
 
 Please note that we're new to running open source projects on GitHub so please support us with any knowledge that you have. 
 
-## Gettings Started
+## Getting Started
 
 For a cross workload view of the ongoing work and the project in general please see the following two items
 
 - Projects: https://github.com/dertinfo/dertinfo/projects
 - Wiki: https://github.com/dertinfo/dertinfo/wiki
 
-We track projects and big peices of work wich spacns several of the workloads (applications, services) using GitHub projects. If you want to help us with planning the work and decisding what we work on next or help with deciding what issues are good for first time developers or are important to the community please let us know. Projects are public as are most issues in the projects (less security vunerabilites) and issues where relevant should be added to a project backlog. 
+We track projects and big peices of work wich spans several of the workloads (applications, services) using GitHub projects. If you want to help us with planning the work and deciding what we work on next or help with deciding what issues are good for first time developers or are important to the community please let us know. Projects are public as are most issues in the projects (less security vunerabilites) and issues where relevant should be added to a project backlog. 
 
 The wiki is where most of the technical documentation will be added to help communicate to contributors how the system works and design decisions in producing the system so that they can be evalauted against and new work that we're looking to complete. 
 
@@ -32,12 +32,15 @@ A depiction and information of the architecture can be found here in the wiki:
 
 - [https://github.com/dertinfo/dertinfo/wiki](https://github.com/dertinfo/dertinfo/wiki)
 
-Each of these projects has it's own README.md which gives greater information about how to setup and run the workload. 
+Each of these projects has it's own README.md which gives more information about how to setup and run the workload. 
 
 For all workloads there is a related docker container which is constucted and published from the main branch in all cases. This is completed by the Azure Dev Ops (ADO) build pipeline and these are downloadable from Docker Hub: [https://hub.docker.com/dertinfo](https://hub.docker.com/u/dertinfo). This allows you to run dependancies using docker and docker-compose for which each project has been make availbale in the location of "infra/docker/" allowing you to work on any single project without needing to setup all services in debug. 
 
 Please note that at the time of writing there is currently minimal seed data in the database to allow the system to run and allow a user to engage with the system. As we gain support it is intededed that we can provide this to allow quicker engagement with some of the more compllex features of the system without having to first build a rich dataset from scratch.  Discussion here: [https://github.com/dertinfo/dertinfo/discussions/20](https://github.com/dertinfo/dertinfo/discussions/20)
 
+## Technology
+
+Have a look at the reposiories for specifics on the technologies used but as a general idea out clients are mostly written in Angular and typescript and are Single Page Applications (SPAs) that communicate with the API written in C# .NET. We use Azure for our hosting and Azure DevOps for out deployment pupelines. We use SendGrid for emails and we use SQL Server for our stuctured data. We use GitHub for managing the project and source control. Application insights for monitoring and telemtry. We use blob storage for unstuctured data. We also use docker for contaienrisation and devcontainers to support development. We use markdown for docuemntation and I'm sure there's a bunch of other stuff in here. 
 
 ## History
 
